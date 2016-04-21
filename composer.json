@@ -1,0 +1,35 @@
+{
+    "name": "st3ph/cakephp-breadcrumb",
+    "description": "CakePHP 3.x plugin to handle Breadcrumb",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "plugin", "breadcrumb", "component", "helper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stéphane Litou",
+            "email": "contact@stephane-litou.com",
+            "homepage": "http://stephane-litou.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.3.*",
+        "cakephp/cakephp-codesniffer": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Breadcrumb\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Breadcrumb\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    },
+    "minimum-stability": "beta"
+}
