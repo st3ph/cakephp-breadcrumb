@@ -49,7 +49,11 @@ class BreadcrumbComponent extends Component
         }   
 
         foreach($this->crumbs as &$crumb) {
-            $crumb['active'] = $this->isActive($crumb['url']);
+            if(empty($crumb['url'])){
+                $crumb['active'] = true;
+            } else {
+                $crumb['active'] = $this->isActive($crumb['url']);
+            }
         }
     }
 
